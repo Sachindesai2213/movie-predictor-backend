@@ -21,7 +21,7 @@ count_vectorizer = CountVectorizer()
 count_matrix = count_vectorizer.fit_transform(data["movie_feature"])
 similarity_matrix = cosine_similarity(count_matrix)
 tmdb = TMDb()
-TMDB_API_KEY = "a288cadf42347603c0549b9838a981df"
+TMDB_API_KEY = "fd7d12b904424e5443bdfc3c18f4c120"
 tmdb.api_key = TMDB_API_KEY
 
 CLASSIFIER_PATH = "./pickle-files/sentiment_classifier.pkl"
